@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  background-color: #000014;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.header .left-block {
+  flex-grow: 1;
+}
+
+.header .center-block {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.header .right-block {
+  flex-grow: 1;
+}
+
+.header .github-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.header-name-container {
+  position: relative;
+}
+
+.header-name-container .header-name {
+  font-size: 50px;
+  background-image: linear-gradient(to right, #51FFFF, #BE64FF); /* Градиентные цвета */
+  -webkit-background-clip: text; /* Применяем градиент к тексту (для браузеров Webkit, таких как Chrome и Safari) */
+  background-clip: text; /* Применяем градиент к тексту */
+  color: transparent; /* Делаем текст невидимым */
+}
+
+.header-name-container .header-name-glowing {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  filter: blur(10px);
+}
